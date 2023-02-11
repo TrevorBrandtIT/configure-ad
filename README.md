@@ -66,7 +66,7 @@ Once you're back into DC-1, open Active Directory Users and Computers (ADUC) by 
 <img src="https://i.imgur.com/DJmEXEB.png" height="80%" width="80%" alt="Disk Sanitization Steps"/>
 </p>
 <p>
-Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do eiusmod tempor incididunt ut labore et dolore magna aliqua. Ut enim ad minim veniam, quis nostrud exercitation ullamco laboris nisi ut aliquip ex ea commodo consequat. Duis aute irure dolor in reprehenderit in voluptate velit esse cillum dolore eu fugiat nulla pariatur.
+Now we'll join Client-1 to our domain. Navigate to the Azure Portal, click on Client-1 -> Networking -> Network Interface -> DNS Servers -> Custom -> input DC-1's private IP -> Save -> Virtual Machines -> Client-1 -> Restart. Now Client-1 should restart, when it does, sign back in. Now right click Start -> click System -> Rename this PC (advanced) -> Change -> Domain -> type in "mydomain.com" -> OK -> log in using Jane Doe's information -> click OK on the pop-up. Client-1 should restart. 
 </p>
 <br />
 
@@ -74,7 +74,7 @@ Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do eiusmod tempor i
 <img src="https://i.imgur.com/DJmEXEB.png" height="80%" width="80%" alt="Disk Sanitization Steps"/>
 </p>
 <p>
-Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do eiusmod tempor incididunt ut labore et dolore magna aliqua. Ut enim ad minim veniam, quis nostrud exercitation ullamco laboris nisi ut aliquip ex ea commodo consequat. Duis aute irure dolor in reprehenderit in voluptate velit esse cillum dolore eu fugiat nulla pariatur.
+Now log back in to Client-1 as Jane Doe. Now right click Start -> click on System -> Remote Desktop -> Select users that can remotely access this PC -> Add -> "domain users" -> Check names -> OK -> OK. Now go back into DC-1 and access ADUC. Expand mydomain.com and access the Computers container. Verify that Client-1 is there.
 </p>
 <br />
 
