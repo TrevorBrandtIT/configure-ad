@@ -82,7 +82,7 @@ We need to make sure that anyone can Remote Desktop in to Client-1. Log back in 
 <img src="https://i.imgur.com/DJmEXEB.png" height="80%" width="80%" alt="Disk Sanitization Steps"/>
 </p>
 <p>
-Finally, we'll be using a PowerShell script to add 10,000 users. Go back into DC-1 and run PowerShell ISE as an Administrator. Copy and paste this script
+Finally, we'll be using a PowerShell script to add 10,000 users. Go back into DC-1 and run PowerShell ISE as an Administrator. Copy the raw contents from <a href="https://github.com/joshmadakor1/AD_PS/blob/master/Generate-Names-Create-Users.ps1">this script</a> and paste them into PowerShell.
 </p>
 <br />
 
