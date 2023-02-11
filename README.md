@@ -58,7 +58,7 @@ Now we'll install Active Directory on DC-1. Go into the Server Manager and click
 <img src="https://i.imgur.com/DJmEXEB.png" height="80%" width="80%" alt="Disk Sanitization Steps"/>
 </p>
 <p>
-Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do eiusmod tempor incididunt ut labore et dolore magna aliqua. Ut enim ad minim veniam, quis nostrud exercitation ullamco laboris nisi ut aliquip ex ea commodo consequat. Duis aute irure dolor in reprehenderit in voluptate velit esse cillum dolore eu fugiat nulla pariatur.
+Once you're back into DC-1, open Active Directory Users and Computers (ADUC) by typing it in the search bar. Then, expand mydomain.com, right click -> New -> Organizational Unit and call it "_EMPLOYEES". Do this again for an OU called "_ADMINS". In _ADMINS, create a new user by right clicking -> New -> User. Make Jane Doe, and make her username "jane_admin". Now add her to the Domain Admins Security Group by right clicking Jane Doe -> Properties -> Member Of -> Add -> type "Domain Admins" -> Check Names -> OK -> Apply -> OK. Now log out of DC-1 and log back in as Jane, we'll be using that account from now on.
 </p>
 <br />
 
