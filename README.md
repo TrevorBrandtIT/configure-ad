@@ -50,7 +50,7 @@ Next, we're going to establish and verify a connection between Client-1 and DC-1
 <img src="https://i.imgur.com/DJmEXEB.png" height="80%" width="80%" alt="Disk Sanitization Steps"/>
 </p>
 <p>
-Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do eiusmod tempor incididunt ut labore et dolore magna aliqua. Ut enim ad minim veniam, quis nostrud exercitation ullamco laboris nisi ut aliquip ex ea commodo consequat. Duis aute irure dolor in reprehenderit in voluptate velit esse cillum dolore eu fugiat nulla pariatur.
+Now we'll install Active Directory on DC-1. Go into the Server Manager and click "Add Roles and Features". Click through the first few prompts, and then select Active Directory Domain Services. Click through the rest of the prompts and then click Install. Once AD is done installing, click on the flag icon in the top right, then click on "Promote this server to a domain controller". Select the option to create a new forest. Use mydomain.com. Click through the prompts and click Install at the end. Sign back into DC-1 as mydomain.com\labuser (or mydomain.com\whatever your username is).
 </p>
 <br />
 
