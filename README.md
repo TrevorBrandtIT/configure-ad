@@ -88,6 +88,6 @@ Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do eiusmod tempor i
 
 
 <p>
-Continued here. Thank you for following along!
+Continued <a href="https://github.com/TrevorBrandtIT/dns-intuition">here.</a> Thank you for following along!
 </p>
 <br />
