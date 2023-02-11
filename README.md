@@ -34,7 +34,7 @@ This tutorial outlines the implementation of on-premises Active Directory within
 <img src="https://i.imgur.com/DJmEXEB.png" height="80%" width="80%" alt="Disk Sanitization Steps"/>
 </p>
 <p>
-Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do eiusmod tempor incididunt ut labore et dolore magna aliqua. Ut enim ad minim veniam, quis nostrud exercitation ullamco laboris nisi ut aliquip ex ea commodo consequat. Duis aute irure dolor in reprehenderit in voluptate velit esse cillum dolore eu fugiat nulla pariatur.
+First, create two VMs in Azure. One should be using Windows 10 and the other should be using Windows Server. Make sure they're both in the same RG and using the same Vnet. Check the network topology in Network Watcher to make sure everything looks right (refer to the picture above). After all of that, we're going to change our Domain Controller's (Server 2022) private IP address to static. In Azure, navigate to Virtual Machines -> DC-1 -> Networking -> Network Interface -> IP Configurations -> Private IP Address -> Change to Static.
 </p>
 <br />
 
