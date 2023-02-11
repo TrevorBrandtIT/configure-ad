@@ -74,7 +74,7 @@ Now we'll join Client-1 to our domain. Navigate to the Azure Portal, click on Cl
 <img src="https://i.imgur.com/DJmEXEB.png" height="80%" width="80%" alt="Disk Sanitization Steps"/>
 </p>
 <p>
-Now log back in to Client-1 as Jane Doe. Now right click Start -> click on System -> Remote Desktop -> Select users that can remotely access this PC -> Add -> "domain users" -> Check names -> OK -> OK. Now go back into DC-1 and access ADUC. Expand mydomain.com and access the Computers container. Verify that Client-1 is there.
+We need to make sure that anyone can Remote Desktop in to Client-1. Log back in to Client-1 as Jane Doe. Now right click Start -> click on System -> Remote Desktop -> Select users that can remotely access this PC -> Add -> "domain users" -> Check names -> OK -> OK. Usually, this would be done with Group Policy to make things faster. Now, go back into DC-1 and access ADUC. Expand mydomain.com and access the Computers container. Verify that Client-1 is there. 
 </p>
 <br />
 
@@ -82,7 +82,7 @@ Now log back in to Client-1 as Jane Doe. Now right click Start -> click on Syste
 <img src="https://i.imgur.com/DJmEXEB.png" height="80%" width="80%" alt="Disk Sanitization Steps"/>
 </p>
 <p>
-Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do eiusmod tempor incididunt ut labore et dolore magna aliqua. Ut enim ad minim veniam, quis nostrud exercitation ullamco laboris nisi ut aliquip ex ea commodo consequat. Duis aute irure dolor in reprehenderit in voluptate velit esse cillum dolore eu fugiat nulla pariatur.
+Finally, we'll be using a PowerShell script to add 10,000 users. Go back into DC-1 and run PowerShell ISE as an Administrator. Copy and paste this script
 </p>
 <br />
 
